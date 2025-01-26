@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Платформа моніторингу кризових ситуацій</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Платформа моніторингу кризових ситуацій</h1>
+    </header>
+    <main>
+        <section id="map-container">
+            <div id="map"></div>
+        </section>
+        <section id="dashboard">
+            <h2>Аналітична панель</h2>
+            <div id="charts">
+                <canvas id="crisisTypeChart"></canvas>
+                <canvas id="severityChart"></canvas>
+            </div>
+        </section>
+        <section id="news-feed">
+            <h2>Останні новини</h2>
+            <ul id="news-list"></ul>
+        </section>
+    </main>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
